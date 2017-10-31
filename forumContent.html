@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>泉医生</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/forum.css">
+	<script src="dist/myfocus-2.0.4.min.js"></script>
+	<script type="text/javascript">
+		myFocus.set({
+		id:'boximg', //焦点图盒子ID		
+		pattern:'mF_taobao2010', //风格应用的名称		
+		time:5, //切换时间间隔(秒)		
+		trigger:'click', //触发切换模式:'click'(点击)/'mouseover'(悬停)		
+		width: 400, //设置图片区域宽度(像素)		
+		height: 250, //设置图片区域高度(像素)		
+		autoZoomL:true,
+		txtHeight:'0'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+
+});
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header" class="header">
+		<a href="http://www.baidu.com" class="logo">泉医生</a>
+		<div class="nav">
+			<a href="aboutus.html" class="nav1">关于我们</a>
+			<a class="nav1">联系我们</a>
+			<a class="nav1" href="personalCenter.html">个人中心</a>
+		</div>
+		<div class="search">
+			<img src="images/magnifier.png">
+			<input type="text">
+		</div>
+		<div class="login_box">
+			<img src="images/login.png">
+			<div class="login">
+				<a href="#">登录</a>/<a href="#">注册</a>
+			</div>
+			<img src="images/msg.png" alt="">
+			<div class="login"><a href="#">消息提醒</a></div>
+			<div class="msgnum">99</div>
+		</div>
+	</div> 
+	<!-- 主页导航 -->
+	<div class="banner_dh">
+		<div class="banner">
+			<img src="images/banner.png" alt="">
+		</div>
+		<div class="dh_menu">
+			<ul>
+				<li class="li1 ">
+					<a href="index.html">
+						<div>集团首页</div>
+						<div>ABOUT</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1 active">
+					<a href="forum.html">
+						<div>骨科论坛</div>
+						<div>FORUM</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1">
+					<a href="#">
+						<div>在线问诊</div>
+						<div>ONLINE</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1">
+					<a href="doctors.html">
+						<div>名医风采</div>
+						<div>DOCTORS</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1">
+					<a href="#">
+						<div>战略合作</div>
+						<div>COOPRERATE</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--导航遮罩层 -->
+		<div class="dh_mask"></div>
+	</div>
+	<!-- 中间内容部分 -->
+	<div class="container_forum">
+		<div class="hotsearch_box" style="border-bottom: 1px dashed #a5a5a5">
+			<div class="hotsearch">
+				<ul class="">
+					<li>热搜:</li>
+					<li><a href="#">骨折</a></li>
+					<li><a href="#">医院</a></li>
+					<li><a href="#">腰间盘</a></li>
+					<li><a href="#">脑血栓</a></li>
+					<li><a href="#">糖尿病</a></li>
+					<li><a href="#">高血压</a></li>
+					<li><a href="#">头疼</a></li>
+				</ul>
+				<ul class="">
+					<li><img src="images/home.png"></li>
+					<li><img src="images/right_arrow.png"></li>
+					<li>骨科论坛 FORUM</li>
+					<li><img src="images/right_arrow.png"></li>
+					<li>学术讨论区</li>					
+				</ul>
+				<ul class="gray">
+					<li style="color: #000">学术讨论区</li>
+					<li><img src="images/today.png"></li>
+					<li>今日：<span style="color:#000;">666</span></li>
+					<li>丨</li>
+					<li>昨日：<span style="color:#000;">823</span></li>
+					<li>丨</li>
+					<li>帖子：<span style="color:#000;">2229309</span></li>
+				</ul>
+				<ul class="partitionModerator">
+					<li style="margin-left: 10px">分区版主:</li>
+					<li><a href="#">盗梦空间</a></li>
+					<li>,</li>
+					<li><a href="#">whu2008</a></li>
+					<li>,</li>
+					<li><a href="#">hahaha</a></li>
+					<li>,</li>
+					<li><a href="#">ENS</a></li>
+				</ul>
+			</div>
+			<div class="hotsearch_right_box">
+				<div class="hotsearch_top" id="addcollect">
+					<img src="images/star.png" style="margin-right: 5px">
+					<a href="" style="color: #000">收藏本站</a>
+				</div>
+				<div class="hotsearch_down">
+					发帖
+				<img src="images/fatie.png">
+				</div>
+			</div>
+	</div>
+	<!-- 内容 -->
+	<div class="forum_box_list">
+		<div class="forum_box_list_left">
+			<div class="forum_box_list_left_top">
+					<div style="width: 590px">筛选：最新发表 最后回复 推荐阅读</div>
+					<div style="width: 100px">作者</div>
+					<div style="width: 100px">回复/点击</div>
+					<div style="width: 100px">最后回复</div>
+			</div>
+			<div class="forum_box_list_left_mid">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img src="images/ding.png"><a href="forumContentDetails.html">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</a></span>
+						<span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span>
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_mid" style="">
+					<div class="mid1 paddingr" style="width: 520px;text-align:left;">
+						<span ><img style="width: 18px;" src="images/putongxinxi.png">椎间盘内窥镜有两种截然不同的系统：内窥镜技术与MED(显微内窥镜)技术</span>
+						<!-- <span style="margin-left: 30px" style="color: #000"><img src="images/jing.png"><img src="images/tuijian.png"><img style="width: 15px; vertical-align: bottom;" src="images/lansexinxi.png">...3 4 5</span> -->
+					</div>
+					<div class="mid1" style="text-align: left;" style="width: 100px">
+						<span>论坛助手-园园</span>
+						<span>2017-09-25</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+						<span>39</span>
+						<span>25673</span>
+					</div>
+					<div class="mid1" style="width: 100px">
+  						<span>南瓜大饼</span>
+						<span>09-29  15：05</span>
+					</div>
+			</div>
+			<div class="forum_box_list_left_down" style="float: right;">
+				<ul class="pagination">
+					<li><a href="#"><img style="margin-right: 10px" src="images/fanhui_left.png">返回</a></li>
+					<li><a href="#">1</a></li>
+					<li><a class="actived" href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">...4065</a></li>
+					<li><a href="#">下一页<img style="margin-left: 10px" src="images/fanhui_right.png"></a></li>
+					<li>到<input type="text">页</li>
+					<li> <input type="submit" value="确定" /></li>
+				</ul>
+        </div>
+		</div>
+		<div class="forum_box_list_right">
+			<div class="right1">
+				<ul>
+					<li class="right_title">本月热门榜单</li>
+					<li><div><span>1</span>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div><span>2</span>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div><span>3</span>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div><span style="background-color: #c5c5c5">4</span>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div><span style="background-color: #c5c5c5">5</span>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div><span style="background-color: #c5c5c5">6</span>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>				</ul>
+			</div>
+			<div class="right1">
+				<ul>
+					<li class="right_title">本月精华帖</li>
+					<li><div>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>
+					<li><div>请教这一例小腿大面积撕脱伤的治疗</div><div>35965</div></li>				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+	<!-- 底部版权部分 -->
+	<div id="footer" class="footer">
+	<div class="friendshiplink">
+		<span>友情链接</span>
+		<ul class="linklist">
+			<li><a href="#">中国人民解放军总医院</a></li>
+			<li><a href="#">北京积水潭医院</a></li>
+			<li><a href="#">北京大学第三医院</a></li>
+			<li><a href="#">南京大学附属鼓楼医院</a></li>
+			<li><a href="#">江苏省人民医院</a></li>
+			<li><a href="#">江苏省中医院</a></li>
+			<li><a href="#">东南大学附属中大医院</a></li>
+			<li><a href="#">南京军区总医院</a></li>
+			<li><a href="#">苏北人民医院</a></li>
+			<li><a href="#">苏州大学附属第二医院</a></li>
+			<li><a href="#">西安红会医院</a></li>
+		</ul>
+		<div class="copyright">
+			南京泉博士医疗科技有限公司 版权所有 copyright@2015  备案号：苏CIP备 15058565号-1 技术支持：江苏沃柯依信息科技有限公司
+		</div>
+	</div>
+	<div class="footer-logo">
+		<img src="images/footer_logo.png">
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#addcollect").click(function() {
+    var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
+    if (document.all) {
+      window.external.addFavorite('http://www.baidu.com', '泉医生')
+    } else if (window.sidebar) {
+      window.sidebar.addPanel('泉医生', 'http://www.baidu.com', "")
+    } else {
+      alert('您可以尝试通过快捷键' + ctrl + ' + D 加入到收藏夹~')
+    }
+  })
+});
+</script>
+</html>

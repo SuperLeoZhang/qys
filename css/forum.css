@@ -1,0 +1,413 @@
+.container_forum{
+	width: 1200px;
+	/*height: 500px;*/
+	margin: 0 auto;
+	/*background-color: red;*/
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	flex-direction: column;
+}
+.gray{
+	color: gray;
+}
+.hotsearch_box{
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	justify-content: space-between;
+	align-items: flex-end;
+
+}
+.hotsearch_right{
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	background-color: #26728a;
+	padding:0 20px;
+	align-items: center;
+	font-size: 15px;
+	color: #fff;
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.hotsearch_top{
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 14px;
+	height: 23px;
+	line-height: 23px;
+}
+.hotsearch_right img{
+	width: 20px;
+	vertical-align:middle;
+	margin-left: 10px;
+}
+
+.hotsearch_right_box img{
+	width: 20px;
+	vertical-align:middle;
+	margin-left: 10px;
+}
+.hotsearch_down{
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	background-color: #26728a;
+	padding:0 20px;
+	align-items: center;
+	font-size: 15px;
+	color: #fff;
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.hotsearch{
+	padding:10px 0 10px 0;
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	flex-direction: column;
+}
+.hotsearch ul li {
+	font-size: 13px;
+	float: left;
+	line-height: 35px;
+	margin-left: 10px;
+}
+.hotsearch ul li a{
+	color: #0b4e63;
+}
+.hotsearch ul li img{
+	height: 17px;
+}
+.list_contnet_title a{
+	color: #000;
+}
+.forum_box_title{
+	font-size: 14px;
+	padding:0 30px;
+	/*margin-bottom: 10px;*/
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	justify-content: space-between;
+	align-items: center;
+	height: 35px;
+	line-height: 35px;
+	background-color: #e3e7e8;
+	box-shadow: 4px 2px 4px #888888;
+}
+.forum_box {
+	margin: 10px 0;
+}
+.hidden{
+	margin-left: 20px;
+	width: 30px;
+	padding:10px;
+	/*height: 5px;*/
+}
+.bordersolid{
+	border:1px solid #a5a5a5;
+}
+.forum_box_content{
+	font-size: 14px;
+	/*margin:20px 0;*/
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	/*padding: 0 5px;*/
+	align-items: center;
+	justify-content: space-between;
+}
+.forum_box_content1{
+	-webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1; /* OLD - Firefox 19- */ 
+	-webkit-flex: 1; /* Chrome */ 
+	-ms-flex: 1; /* IE 10 */ 
+	flex: 1; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	text-align: center;
+}
+.box_content_title{
+	text-align: center;
+	font-size: 15px;
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px dotted  #a5a5a5;
+}
+ul.partitionModerator li{
+	margin-left: 5px;
+}
+.box_content_con{
+	/*padding:5px;*/
+	margin: 10px 5px;
+}
+.box_content_con .con_list{
+	padding-top: 10px;
+}
+.box_content_con .con_list li {
+	height: 40px;
+	line-height: 40px;
+	background: url("../images/luntan_arrow.png") no-repeat ;
+	-webkit-background-size: 6px;
+	background-size: 6px;
+	background-position:12px;
+}
+.box_content_con a{
+	color: #000;
+	font-size: 13px;
+}
+.pic{
+	/*height: 200px;*/
+}
+.pic img{
+	width: 400px;
+	height: 250px;
+}
+.forum_box_discuss_list img{
+	width: 190px;
+}
+.forum_box_content{
+	padding: 5px;
+}
+.list_contnet_title{
+	height: 40px;
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	font-size: 14px;
+}
+.title_label{
+	word-break:normal;
+	display:block; 
+	white-space:pre-wrap;
+	word-wrap : break-word ;
+	overflow: hidden;
+	width: 200px;
+	margin-left: 30px;
+	color: #888888;
+	font-size: 12px;
+	/*line-height: 30px;*/
+}
+.forum_box_discuss_list_content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding:20px 20px;
+	/*line-height: 30px;*/
+}
+.list_content_moderator span{
+	color: #156781;
+}
+.forum_box_discuss_num span{
+	color: #156781;
+}
+.mid1 a{
+	color: #000;
+}
+.forum_box_discuss_num{
+	text-align: right;
+	-webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1; /* OLD - Firefox 19- */ 
+	-webkit-flex: 1; /* Chrome */ 
+	-ms-flex: 1; /* IE 10 */ 
+	flex: 1; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	padding-right: 20px;
+	/*align-items: center;*/
+}
+.m_right{
+	margin-right: 30px;
+}
+.forum_box_discuss_list{
+	line-height: 30px;
+	/*padding-right: 30px;*/
+}
+.post_title{
+	color: #156781;
+}
+.forun_bbox {
+	margin: 20px 0;
+	padding: 10px;
+}
+.forum_box_list{
+	margin-top: 10px;
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	justify-content: space-between;
+}
+.forum_box_list_left{
+	width: 875px;
+}
+.forum_box_list_right{
+	width: 300px;
+	/*background-color: red*/
+}
+.forum_box_list_left_top{
+	font-size: 14px;
+	padding-left: 10px;
+	/*margin-bottom: 10px;*/
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	height: 35px;
+	line-height: 35px;
+	background-color: #e3e7e8;
+	box-shadow: 4px 2px 4px #888888;
+	margin-bottom: 10px;
+}
+.forum_box_list_left .forum_box_list_left_mid:nth-last-child(2){
+	border-bottom: 1px solid #a5a5a5;
+}
+.forum_box_list_left_mid{
+	align-items: center;
+	padding:10px 0;
+	height: 50px;
+	line-height: 20px;
+	font-size: 13px;
+	padding-left: 10px;
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	border:1px solid #a5a5a5;
+	border-bottom: none;
+}
+.forum_box_list_left_mid img{
+	vertical-align: middle;
+	width: 20px;
+	margin-right: 5px;
+	/*height: 10px;*/
+}
+.forum_box_list_left_mid .paddingr{
+	padding-right: 50px;
+	overflow: hidden;
+}
+.mid1{
+	display: flex;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	flex-direction: column;
+	text-align: center;
+}
+.mid1 span:nth-child(2){
+	color: #a0a0a0;
+}
+.forum_box_list_left_down{
+	margin:20px 0 50px 0;
+}
+.right1{
+	border:1px solid #a5a5a5;
+	margin-bottom: 30px;
+}
+.right1 li{
+	border-bottom: 1px dashed #a5a5a5;
+	height: 30px;
+	line-height: 30px;
+	padding:0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.right1 li:nth-last-child(1){
+	border-bottom:none;
+}
+.right1 li.right_title{
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
+.right1 li div:nth-last-child(1){
+	color: #a0a0a0
+}
+.right1 li span{
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	width: 15px;
+	text-align: center;
+	margin-right: 5px;
+/*	width: 10px;
+	height: 10px;*/
+	background-color: #fe708a;
+}
+ul.pagination {
+			    display: inline-block;
+			    padding: 0;
+			    margin: 0;
+			}
+			
+			ul.pagination li {display: inline;}
+			
+			ul.pagination li a {
+			    color: black;
+			    float: left;
+			    padding: 8px 16px;
+			    text-decoration: none;
+			    transition: background-color .3s;
+			    border: 1px solid #a2c8d3;
+			    margin: 0 4px;
+			}
+			
+			ul.pagination li a.actived {
+			    background-color: #a2c8d3;
+			    color: white;
+			    border: 1px solid #a2c8d3;
+			}
+			
+			ul.pagination li a:hover:not(.actived) {background-color: #ddd;}
+			.pagination img{
+				width: 10px;
+				vertical-align: bottom;	
+			}
+			.pagination input{
+				margin:0 5px;
+				width: 60px;
+				height: 32px;
+				border: 1px solid #a2c8d3;
+			}
+			.pagination input[type=submit]{
+				border:none;
+				margin:0 5px;
+				width: 70px;
+				height: 34px;
+				line-height: 34px;
+				text-align: center;
+				background-color: #226f88;
+				border-radius: 5px;
+				color: #fff;
+			}

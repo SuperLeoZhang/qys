@@ -1,0 +1,279 @@
+.introduction{
+    /*background-color: #f1f1f1;*/
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+.list1{
+    /*height: 400px;*/
+    background-color: #fff;
+}
+.list1_title{
+    background-color: #f1f1f1;
+    font-size: 19px;
+    height: 55px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-top:40px;
+}
+.list1_content{
+    background-color: #fff;
+    display: flex;
+    padding:40px;
+    box-shadow: 10px 10px 10px #888888;
+    height: 200px;
+    /*overflow: hidden;*/
+}
+.list1_content img{
+    height: 200px;
+    box-shadow: 10px 10px 10px #888888;
+    margin-right:50px;
+    position: relative;
+    top:70px;
+    left:0px;
+}
+.list1_content_right{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+}
+.list1_content_right span{
+    line-height: 25px;
+}
+.list2{
+    margin-top:120px;
+    height: 194px;
+    padding:40px 0 40px 5px;
+    /*padding-right:0px;*/
+    border-top: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    position: relative;
+    display: flex;
+    font-size: 16px;
+}
+.list2_title{
+    padding-left:30px;
+    font-size: 19px;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    right:0px;
+    width:460px;
+    background-color: #f1f1f1;
+}
+.list2_content{
+    padding:0 20px;
+}
+.list2_content div{
+    line-height: 50px;
+}
+.list2 img{
+    height: 240px;
+    box-shadow: 5px 5px 10px #888888;
+    z-index: 99;
+}
+.list2_bottom{
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    background-color: #156781;
+    font-size:17px;
+    color: #fff;
+    box-shadow: 5px 5px 10px #888888;
+}
+.dw_bottom{
+    padding-left:20px;
+    position: absolute;
+    left:300px;
+    bottom:-20px;
+    width: 80%;
+    background-color: #f1f1f1;
+}
+.list3 {
+    margin-top: 120px;
+    display: flex;
+    position: relative;
+    /*align-items: center;*/
+}
+.list3_t{
+    background-color: #156781;
+    width: 200px;
+
+}
+.list3_t li {
+    padding-left:10px;
+    font-size: 15px;
+    height: 33px;
+    line-height: 33px;
+    color: #fff;
+}
+.list3_c{
+    z-index: 10;
+}
+.list3_c img{
+    height: 300px;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+.list3_d{
+    /*width: 550px;*/
+    padding:10px;
+    flex: 1;
+    font-size: 18px;
+    align-self:center;
+    background-color: #f4f4f4;
+    /*margin-left:5px;*/
+    /*line-height:20px;*/
+}
+.cooperative_box{
+    z-index: 99;
+    position: absolute;
+    bottom:-40px;
+    left:530px;
+    border: 3px solid #fff;
+    padding:5px;
+}
+.cooperative{
+    /*font-weight: blo;*/
+    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    color: #000;
+}
+.list4 {
+    margin-top:120px;
+    height: 300px;
+    border: 3px solid #000;
+    display: flex;
+    font-size: 15px;
+    position: relative;
+}
+.list4_l{
+    position: relative;
+    top:125px;
+    left:-70px;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    background-color: #156781;
+    font-size:17px;
+    color: #fff;
+    box-shadow: 5px 5px 10px #888888;
+}
+.list4_c{
+    line-height:30px;
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+}
+.list4_r {
+    width: 400px;
+    height: 200px;
+    margin: 50px auto 0;
+    z-index: 99;
+    position: absolute;
+    top: -23px;
+    right:-120px;
+}
+.list4_r .slide-carousel {
+    margin-bottom: 20px;
+}
+.list4_r .slide-3d .desc {
+    display: none;
+}
+.list4_r .slide-3d .item-list li {
+    /*width: 400px;*/
+    height: 200px;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.list4_r .slide-3d .item-list li.item0 {
+    transform: translate3d(-100px, 0, 0) scale(0.8);
+}
+.list4_r .slide-3d .item-list li.item1 {
+    transform: translate3d(0, 0, 0) scale(0.8);
+    transform-origin: 0 50%;
+    opacity: 1;
+    z-index: 2;
+}
+.list4_r .slide-3d .item-list li.item2 {
+    transform: translate3d(100px, 0, 0) scale(1);
+    transform-origin: 0 50%;
+    opacity: 1;
+    z-index: 3;
+}
+.list4_r .slide-3d .item-list li.item3 {
+    transform: translate3d(200px, 0, 0) scale(0.8);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    z-index: 2;
+}
+.list4_r .slide-3d .item-list li.item4 {
+    transform: translate3d(400px, 0, 0) scale(0.8);
+}
+/*.list4_r .slide-3d .item-list li.item5 {*/
+    /*transform: translate3d(600px, 0, 0) scale(0.8);*/
+/*}*/
+/*.list4_r .slide-3d .item-list li.item6 {*/
+    /*transform: translate3d(800px, 0, 0) scale(0.8);*/
+/*}*/
+/*.list4_r .slide-3d .item-list li.item7 {*/
+    /*transform: translate3d(1000px, 0, 0) scale(0.8);*/
+/*}*/
+/*.list4_r .slide-3d .item-list li.item8 {*/
+    /*transform: translate3d(1200px, 0, 0) scale(0.8);*/
+/*}*/
+/*.list4_r .slide-3d .item-list li.item9 {*/
+    /*transform: translate3d(1400px, 0, 0) scale(0.8);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li {*/
+    /*width: 1200px;*/
+    /*height: 300px;*/
+    /*transition: all 0.5s ease-out;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item0 {*/
+    /*transform: translateX(-1000px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item1 {*/
+    /*transform: translateX(0px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item2 {*/
+    /*transform: translateX(1000px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item3 {*/
+    /*transform: translateX(2400px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item4 {*/
+    /*transform: translateX(3600px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item5 {*/
+    /*transform: translateX(4800px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item6 {*/
+    /*transform: translateX(6000px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item7 {*/
+    /*transform: translateX(7200px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item8 {*/
+    /*transform: translateX(8400px);*/
+/*}*/
+/*.list4_r .slide-2d .item-list li.item9 {*/
+    /*transform: translateX(9600px);*/
+/*}*/

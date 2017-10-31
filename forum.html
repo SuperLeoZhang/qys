@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>泉医生</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/forum.css">
+	<script src="dist/myFocus-2.0.4.min.js"></script>
+	<script type="text/javascript">
+		myFocus.set({
+		id:'boximg', //焦点图盒子ID		
+		pattern:'mF_taobao2010', //风格应用的名称		
+		time:5, //切换时间间隔(秒)		
+		trigger:'click', //触发切换模式:'click'(点击)/'mouseover'(悬停)		
+		width: 400, //设置图片区域宽度(像素)		
+		height: 250, //设置图片区域高度(像素)		
+		autoZoomL:true,
+		txtHeight:'0'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+});
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<<div id="header" class="header">
+		<a href="http://www.baidu.com" class="logo">泉医生</a>
+		<div class="nav">
+			<a href="aboutus.html" class="nav1">关于我们</a>
+			<a class="nav1">联系我们</a>
+			<a class="nav1" href="personalCenter.html">个人中心</a>
+		</div>
+		<div class="search">
+			<img src="images/magnifier.png">
+			<input type="text">
+		</div>
+		<div class="login_box">
+			<img src="images/login.png">
+			<div class="login">
+				<a href="#">登录</a>/<a href="#">注册</a>
+			</div>
+			<img src="images/msg.png" alt="">
+			<div class="login"><a href="#">消息提醒</a></div>
+			<div class="msgnum">99</div>
+		</div>
+	</div> 
+	<!-- 主页导航 -->
+	<div class="banner_dh">
+		<div class="banner">
+			<img src="images/banner.png" alt="">
+		</div>
+		<div class="dh_menu">
+			<ul>
+				<li class="li1 ">
+					<a href="index.html">
+						<div>集团首页</div>
+						<div>ABOUT</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1 active">
+					<a href="forum.html">
+						<div>骨科论坛</div>
+						<div>FORUM</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1">
+					<a href="#">
+						<div>在线问诊</div>
+						<div>ONLINE</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1">
+					<a href="doctors.html">
+						<div>名医风采</div>
+						<div>DOCTORS</div>
+					</a>
+				</li>
+				<li><img src="images/line.png"></li>
+				<li class="li1">
+					<a href="#">
+						<div>战略合作</div>
+						<div>COOPRERATE</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--导航遮罩层 -->
+		<div class="dh_mask"></div>
+	</div>
+	<!-- 中间内容部分 -->
+	<div class="container_forum">
+		<div class="hotsearch_box">
+			<div class="hotsearch">
+				<ul class="">
+					<li>热搜:</li>
+					<li><a href="#">骨折</a></li>
+					<li><a href="#">医院</a></li>
+					<li><a href="#">腰间盘</a></li>
+					<li><a href="#">脑血栓</a></li>
+					<li><a href="#">糖尿病</a></li>
+					<li><a href="#">高血压</a></li>
+					<li><a href="#">头疼</a></li>
+				</ul>
+				<ul class="">
+					<li><img src="images/home.png"></li>
+					<li><img src="images/right_arrow.png"></li>
+					<li>骨科论坛 FORUM</li>
+				</ul>
+				<ul class="gray">
+					<li><img src="images/today.png"></li>
+					<li>今日：<span style="color:#000;">666</span></li>
+					<li>丨</li>
+					<li>昨日：<span style="color:#000;">823</span></li>
+					<li>丨</li>
+					<li>帖子：<span style="color:#000;">2229309</span></li>
+					<li>丨</li>
+					<li>用户：<span style="color:#000;">2229309</span></li>
+					<li>丨</li>
+					<li>欢迎新用户：<span style="color:#000;">奥特曼222</span></li>
+				</ul>
+			</div>
+			<div class="hotsearch_right">
+				签到
+				<img src="images/qiandao.png">
+			</div>
+</div>
+
+		<!-- 栏目一 -->
+		<div class="forum_box">
+			<div class="forum_box_title">
+				<div class="forum_box_title_left">『健康时刻』 14点~15点：人体应激能力下降，全身反应迟钝。</div>
+				<div class="forum_box_title_right">2017年9月28日  星期四 <img class="hidden" src="images/jia.png" onclick="boxHide(this)">
+				</div>
+			</div>
+			<div class="forum_box_content bordersolid" style="margin:20px 0">
+				<div class="forum_box_content1">
+					<div class="box_content_title">
+						『论坛图集』
+					</div>
+					<div class="box_content_con" id="boximg">
+						<div class="pic">
+    						<ul>
+        						<li><a href="#"><img src="images/img1.png" alt="标题1" /></a></li>
+        						<li><a href="#"><img src="images/img1.png" alt="标题1" /></a></li>
+        						<li><a href="#"><img src="images/img1.png" alt="标题1" /></a></li>
+        						<li><a href="#"><img src="images/img1.png" alt="标题1" /></a></li>
+        						<li><a href="#"><img src="images/img1.png" alt="标题1" /></a></li>
+        						<!-- 你可以根据需要添加更多的列 -->
+   				 			</ul>
+  						</div>
+					</div>
+				</div>
+				<div class="forum_box_content1">
+					<div class="box_content_title">
+						『最新发表』
+					</div>
+					<div class="box_content_con">
+						<ul class="con_list">
+							<li><a href="#">新华社：医护人员今年确定涨工资!</a></li>
+							<li><a href="#">牢记这十点 和急性腹痛误诊说再见</a></li>
+							<li><a href="#">2018 考研人数将高达 400万!!你准...</a></li>
+							<li><a href="#">新华社：医护人员今年确定涨工资!</a></li>
+							<li><a href="#">牢记这十点 和急性腹痛误诊说再见</a></li>
+							<li><a href="#">2018 考研人数将高达 400万!!你准...</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="forum_box_content1">
+					<div class="box_content_title">
+						『最新回复』
+					</div>
+					<div class="box_content_con">
+						<ul class="con_list">
+							<li><a href="#">新华社：医护人员今年确定涨工资!</a></li>
+							<li><a href="#">牢记这十点 和急性腹痛误诊说再见</a></li>
+							<li><a href="#">2018 考研人数将高达 400万!!你准...</a></li>
+							<li><a href="#">新华社：医护人员今年确定涨工资!</a></li>
+							<li><a href="#">牢记这十点 和急性腹痛误诊说再见</a></li>
+							<li><a href="#">2018 考研人数将高达 400万!!你准...</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="forum_box_content1">
+					<div class="box_content_title">
+						『推荐阅读』
+					</div>
+					<div class="box_content_con">
+						<ul class="con_list">
+							<li><a href="#">新华社：医护人员今年确定涨工资!</a></li>
+							<li><a href="#">牢记这十点 和急性腹痛误诊说再见</a></li>
+							<li><a href="#">2018 考研人数将高达 400万!!你准...</a></li>
+							<li><a href="#">新华社：医护人员今年确定涨工资!</a></li>
+							<li><a href="#">牢记这十点 和急性腹痛误诊说再见</a></li>
+							<li><a href="#">2018 考研人数将高达 400万!!你准...</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 栏目一 -->
+		<div class="forum_box ">
+			<div class="forum_box_title">
+				<div class="forum_box_title_left">学术讨论区</div>
+				<div class="forum_box_title_right">分区版主：<span style="color: #156781">我是孽枫丶老中医专治各种疑难杂症</span><img class="hidden" src="images/jia.png" onclick="boxHide(this)">
+				</div>
+			</div>
+		<div class="forun_bbox bordersolid">
+			<div class="forum_box_content" style="padding: 0;border-bottom:1px dotted  #a5a5a5;padding-bottom: 10px">
+				<div class="forum_box_discuss_list"><img src="images/img1.png"></div>
+				<div class="forum_box_discuss_list_content">
+					<div class="list_contnet_title"><a href="forumContent.html">骨科基础研究&数字骨科</a><span class="title_label">骨折 肿瘤 结核病 骨质疏松症 
+股骨颈骨折 股骨头坏死</span></div>
+				<div class="list_content_moderator">版主：<span>我是孽枫丶老中医专治各种疑难杂症 饮水年华 假面 12345</span></div>
+				</div>
+				<div class="forum_box_discuss_num"><span>162497</span>/2003181</div>
+				<div class="forum_box_discuss_list m_right">
+					<div class="post_title">硬组织切片磨片的步骤请教...</div>
+					<div class="post_title_author">1分钟前  dongdaren</div>
+				</div>
+			</div>
+			<div class="forum_box_content" style="padding: 0;margin-top: 20px">
+				<div class="forum_box_discuss_list"><img src="images/img1.png"></div>
+				<div class="forum_box_discuss_list_content">
+					<div class="list_contnet_title"><a href="forumContent.html">骨科基础研究&数字骨科</a><span class="title_label">骨折 肿瘤 结核病 骨质疏松症 
+股骨颈骨折 股骨头坏死</span></div>
+				<div class="list_content_moderator">版主：<span>我是孽枫丶老中医专治各种疑难杂症 饮水年华 假面 12345</span></div>
+				</div>
+				<div class="forum_box_discuss_num"><span>162497</span>/2003181</div>
+				<div class="forum_box_discuss_list m_right">
+					<div class="post_title">硬组织切片磨片的步骤请教...</div>
+					<div class="post_title_author">1分钟前  dongdaren</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<!-- 栏目一 -->
+		<div class="forum_box ">
+			<div class="forum_box_title">
+				<div class="forum_box_title_left">休闲区</div>
+				<div class="forum_box_title_right">分区版主：<span style="color: #156781">我是孽枫丶老中医专治各种疑难杂症</span><img class="hidden" src="images/jia.png" onclick="boxHide(this)">
+				</div>
+			</div>
+		<div class="forun_bbox bordersolid">
+			<div class="forum_box_content" style="padding: 0;border-bottom:1px dotted  #a5a5a5;padding-bottom: 10px">
+				<div class="forum_box_discuss_list"><img style="width: 40px;margin-left:20px" src="images/xiaoxi.png"></div>
+				<div class="forum_box_discuss_list_content">
+					<div class="list_contnet_title">心情驿站<span class="title_label">骨折 肿瘤 结核病 骨质疏松症 
+股骨颈骨折 股骨头坏死</span></div>
+				<div class="list_content_moderator">版主：<span>我是孽枫丶老中医专治各种疑难杂症 饮水年华 假面 12345</span></div>
+				</div>
+				<div class="forum_box_discuss_num"><span>725</span>/1424</div>
+				<div class="forum_box_discuss_list m_right">
+					<div class="post_title">硬组织切片磨片的步骤请教...</div>
+					<div class="post_title_author">1分钟前  dongdaren</div>
+				</div>
+			</div>
+			<div class="forum_box_content" style="padding: 0;margin-top: 20px">
+				<div class="forum_box_discuss_list"><img style="width: 40px;margin-left:20px" src="images/xiaoxi.png"></div>
+				<div class="forum_box_discuss_list_content">
+					<div class="list_contnet_title">健康信息友情互助版<span class="title_label">骨折 肿瘤 结核病 骨质疏松症 
+股骨颈骨折 股骨头坏死</span></div>
+				<div class="list_content_moderator">版主：<span>我是孽枫丶老中医专治各种疑难杂症 饮水年华 假面 12345</span></div>
+				</div>
+				<div class="forum_box_discuss_num"><span>725</span>/1424</div>
+				<div class="forum_box_discuss_list m_right">
+					<div class="post_title">硬组织切片磨片的步骤请教...</div>
+					<div class="post_title_author">1分钟前  dongdaren</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+			<!-- 栏目一 -->
+		<div class="forum_box ">
+			<div class="forum_box_title">
+				<div class="forum_box_title_left">论坛管理区</div>
+				<div class="forum_box_title_right">分区版主：<span style="color: #156781">我是孽枫丶老中医专治各种疑难杂症</span><img class="hidden" src="images/jia.png" onclick="boxHide(this)">
+				</div>
+			</div>
+		<div class="forun_bbox bordersolid">
+			<div class="forum_box_content" style="padding: 0;border-bottom:1px dotted  #a5a5a5;padding-bottom: 10px">
+				<div class="forum_box_discuss_list"><img style="width: 40px;margin-left:20px" src="images/xiaoxi.png"></div>
+				<div class="forum_box_discuss_list_content">
+					<div class="list_contnet_title">站务公告与建设版<span class="title_label">骨折 肿瘤 结核病 骨质疏松症 
+股骨颈骨折 股骨头坏死</span></div>
+				<div class="list_content_moderator">版主：<span>我是孽枫丶老中医专治各种疑难杂症 饮水年华 假面 12345</span></div>
+				</div>
+				<div class="forum_box_discuss_num"><span>725</span>/1424</div>
+				<div class="forum_box_discuss_list m_right">
+					<div class="post_title">硬组织切片磨片的步骤请教...</div>
+					<div class="post_title_author">1分钟前  dongdaren</div>
+				</div>
+			</div>
+			<div class="forum_box_content" style="padding: 0;margin-top: 20px">
+				<div class="forum_box_discuss_list"><img style="width: 40px;margin-left:20px" src="images/xiaoxi.png"></div>
+				<div class="forum_box_discuss_list_content">
+					<div class="list_contnet_title">版主职务变更与晋级申请区<span class="title_label">骨折 肿瘤 结核病 骨质疏松症 
+股骨颈骨折 股骨头坏死</span></div>
+				<div class="list_content_moderator">版主：<span>我是孽枫丶老中医专治各种疑难杂症 饮水年华 假面 12345</span></div>
+				</div>
+				<div class="forum_box_discuss_num"><span>725</span>/1424</div>
+				<div class="forum_box_discuss_list m_right">
+					<div class="post_title">硬组织切片磨片的步骤请教...</div>
+					<div class="post_title_author">1分钟前  dongdaren</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+	</div>
+
+	<!-- 底部版权部分 -->
+	<div id="footer" class="footer">
+	<div class="friendshiplink">
+		<span>友情链接</span>
+		<ul class="linklist">
+			<li><a href="#">中国人民解放军总医院</a></li>
+			<li><a href="#">北京积水潭医院</a></li>
+			<li><a href="#">北京大学第三医院</a></li>
+			<li><a href="#">南京大学附属鼓楼医院</a></li>
+			<li><a href="#">江苏省人民医院</a></li>
+			<li><a href="#">江苏省中医院</a></li>
+			<li><a href="#">东南大学附属中大医院</a></li>
+			<li><a href="#">南京军区总医院</a></li>
+			<li><a href="#">苏北人民医院</a></li>
+			<li><a href="#">苏州大学附属第二医院</a></li>
+			<li><a href="#">西安红会医院</a></li>
+		</ul>
+		<div class="copyright">
+			南京泉博士医疗科技有限公司 版权所有 copyright@2015  备案号：苏CIP备 15058565号-1 技术支持：江苏沃柯依信息科技有限公司
+		</div>
+	</div>
+	<div class="footer-logo">
+		<img src="images/footer_logo.png">
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	function boxHide(_this) {
+		var imgsrc = $(_this);
+		var hideImgParent = $(_this).parent().parent().next();
+		if(hideImgParent.is(':hidden')){
+			hideImgParent.show();
+			imgsrc.attr('src',"images/jia.png"); 
+		}else{
+			hideImgParent.hide();
+			imgsrc.attr('src',"images/jian.png"); 
+		}
+	};
+</script>
+</html>

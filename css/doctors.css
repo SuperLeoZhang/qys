@@ -1,0 +1,35 @@
+.doctors_team{
+    border-top: 1px dashed #a5a5a5;
+    border-bottom: 1px dashed #a5a5a5;
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    color: #0b4e63;
+}
+.doctors_list{
+    /*padding:20px 0;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.doctors_list .list1{
+    display: flex;
+    width: 600px;
+    margin:20px 0;
+}
+.doctors_list .list1 img{
+    height: 300px;
+    padding:3px;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+.doctors_list .doctors_introduce{
+    padding:50px 20px 20px 20px;
+    /*align-items: center;*/
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    font-size: 14px;
+}
+.doctors_introduce div{
+    line-height: 30px;
+}

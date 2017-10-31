@@ -1,0 +1,94 @@
+.information_title{
+    font-size: 15px;
+    line-height:30px;
+}
+.information_author{
+    color: #9a9a9a;
+    line-height:20px;
+}
+.information_content{
+    font-size: 14px;
+    line-height:25px;
+}
+.shoucang{
+    font-size: 13px;
+    margin-top:10px;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+}
+.shoucang .editor{
+    color: #9a9a9a;
+    flex: 1;
+    text-align: right;
+}
+.shoucang li{
+    float: left;
+    width: 70px;
+}
+.shoucang img{
+    height: 25px;
+    margin-right:5px;
+}
+.information_bottom{
+    margin-top:20px;
+}
+.information_com{
+    background-color: #e3e7e8;
+    position: relative;
+    padding:10px;
+}
+.information_com textarea{
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    padding:10px;
+    width: 97%;
+    height: 300px;
+}
+.information_com input{
+    background-color: #206e86;
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.submit{
+    margin-top:10px;
+    text-align: right;
+}
+.small img{
+    height: 30px;
+    margin-right:10px;
+}
+.small{
+    position: absolute;
+    bottom:100px;
+    right:40px;
+    display: flex;
+}
+
+.box_list{
+    display: flex;
+    padding:10px 0;
+    border-bottom:1px dashed #a5a5a5;
+}
+.list_touxiang{
+    height: 50px;
+    margin-right:20px;
+}
+.list_r{
+    flex:1;
+}
+.list_r_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #156781;
+}
+.list_r_content{
+    line-height: 25px;
+    font-size: 13px;
+}

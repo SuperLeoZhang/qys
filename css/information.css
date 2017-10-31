@@ -1,0 +1,31 @@
+.information_box{
+    display: flex;
+    flex-direction: column;
+}
+.information_list{
+    display: flex;
+    padding:30px 0;
+    border-bottom: 1px dashed #a5a5a5
+}
+.information_list img{
+    height: 125px;
+    margin-right:20px;
+}
+.information_list_r{
+    padding:10px 0;
+    display: flex;
+    flex:1;
+    font-size:14px;
+    flex-direction: column;
+}
+.list_r_title{
+    display: flex;
+    justify-content: space-between;
+}
+.list_r_content{
+    margin-top:20px;
+    color: #a0a0a0;
+}
+.information a{
+    color: #000;
+}
